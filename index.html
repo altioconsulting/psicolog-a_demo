@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Elena Rostova | Psicología Clínica & Neuropsicoterapia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-canvas: #0b0f12;
+            --glass-bg: rgba(22, 28, 33, 0.7);
+            --accent-gold: #c5a880;
+            --text-primary: #f3f4f6;
+            --text-muted: #8a99a6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-canvas);
+            color: var(--text-primary);
+            display: flex; justify-content: center; align-items: center;
+            min-height: 100vh; padding: 24px;
+        }
+
+        .premium-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            width: 100%; max-width: 440px;
+            border-radius: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+        }
+
+        .card-header { padding: 45px 30px 25px 30px; text-align: center; }
+        .profile-img { width: 124px; height: 124px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent-gold); margin-bottom: 24px; }
+        
+        h1 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; margin-bottom: 8px; }
+        .clinical-title { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-gold); margin-bottom: 12px; }
+        
+        .cedula-badge { 
+            font-size: 0.65rem; color: var(--text-muted); background: rgba(255,255,255,0.03); 
+            padding: 4px 12px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .card-body { padding: 0 32px 40px 32px; }
+        .section-label { font-size: 0.65rem; text-transform: uppercase; color: var(--text-muted); margin: 20px 0 12px 0; display: flex; align-items: center; gap: 8px; }
+        .section-label::after { content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.05); }
+
+        .expertise-item { background: rgba(255,255,255,0.02); padding: 12px; border-radius: 12px; margin-bottom: 8px; font-size: 0.85rem; display: flex; align-items: center; gap: 10px; }
+        
+        .cta-btn { 
+            display: block; width: 100%; text-align: center; background: var(--accent-gold); 
+            color: #0b0f12; padding: 14px; border-radius: 12px; font-weight: 600; text-decoration: none; 
+            margin-bottom: 20px; transition: 0.3s;
+        }
+
+        .comm-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .comm-card { background: rgba(255,255,255,0.02); padding: 12px; border-radius: 12px; text-align: center; text-decoration: none; color: var(--text-primary); font-size: 0.8rem; }
+        
+        .footer { padding: 20px; text-align: center; font-size: 0.65rem; color: var(--text-muted); border-top: 1px solid rgba(255,255,255,0.05); }
+    </style>
+</head>
+<body>
+
+    <div class="premium-card">
+        <div class="card-header">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=300" alt="Dra. Elena Rostova" class="profile-img">
+            <h1>Dra. Elena Rostova</h1>
+            <div class="clinical-title">Psicoterapia Clínica & Neuropsicología</div>
+            <div class="cedula-badge"><i class="fas fa-id-card"></i> Cédula Profesional SEP: 9845120</div>
+        </div>
+
+        <div class="card-body">
+            <div class="section-label">Especialidades Clínicas</div>
+            <div class="expertise-item"><i class="fas fa-brain"></i> Neuropsicoterapia y Regulación Emocional</div>
+            <div class="expertise-item"><i class="fas fa-user-tie"></i> Burnout y Salud Mental Laboral</div>
+
+            <div class="section-label">Contacto Profesional</div>
+            <a href="https://wa.me/5211234567890" class="cta-btn"><i class="fab fa-whatsapp"></i> Agendar Cita por WhatsApp</a>
+
+            <div class="comm-grid">
+                <a href="tel:+5211234567890" class="comm-card"><i class="fas fa-phone-alt"></i><br>Llamada</a>
+                <a href="mailto:contacto@clinicarostova.mx" class="comm-card"><i class="fas fa-envelope"></i><br>Correo</a>
+            </div>
+
+            <div class="section-label">Ubicación</div>
+            <div class="expertise-item" style="font-size: 0.75rem;">
+                <i class="fas fa-map-marker-alt"></i> Av. Paseo de la Reforma #402, CDMX.
+            </div>
+        </div>
+
+        <div class="footer">
+            <i class="fas fa-lock"></i> Tu información está protegida bajo el Secreto Profesional y la Ley General de Protección de Datos Personales.
+        </div>
+    </div>
+</body>
+</html>
